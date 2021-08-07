@@ -1,0 +1,17 @@
+{
+  "name": "nodeless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "predeploy": "rd /s /q node_modules\\sharp && npm install --arch=x64 --platform=linux sharp",
+    "deploy": "serverless deploy -v",
+    "postdeploy": "rd /s /q node_modules\\sharp && npm install sharp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.27.0"
+  }
+}
